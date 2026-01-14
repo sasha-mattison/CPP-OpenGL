@@ -1,0 +1,1 @@
+/usr/bin/aarch64-unknown-linux-gnu-g++ -g -Wl,--dependency-file=CMakeFiles/app.dir/link.d CMakeFiles/app.dir/src/glad.cpp.o CMakeFiles/app.dir/src/main.cpp.o CMakeFiles/app.dir/src/stb.cpp.o -o app  -lglfw -ldl -lpthread -lX11 -lXrandr -lXi

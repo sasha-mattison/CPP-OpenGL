@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/glad.cpp.o -c /Users/sashamattison/CPP/MacOS/src/glad.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/src/glad.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/glad.cpp.o"
+},
+{
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/main.cpp.o -c /Users/sashamattison/CPP/MacOS/src/main.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/src/main.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/stb.cpp.o -c /Users/sashamattison/CPP/MacOS/src/stb.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/src/stb.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/stb.cpp.o"
+}
+]
