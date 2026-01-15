@@ -8,6 +8,7 @@
 
 #### Install with: Sudo pacman -Syu base-devel mesa glfw-x11 glm libglvnd cmake
 
+Also requires:
 - GLAD
 - stb_image
 
