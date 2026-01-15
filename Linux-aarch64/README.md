@@ -1,7 +1,9 @@
 # CPP
 Learning OpenGL in C++
 
-# Requirements (Arch Linux)
+
+# Arch Linux 
+Requirements 
 - GLM 
 - GLFW
 - cmake
@@ -13,3 +15,8 @@ Install with: Sudo pacman -Syu base-devel mesa glfw-x11 glm libglvnd cmake
 ------------------------------------------------------------
 - GLAD
 - stb_image
+
+------------------------------------------------------------
+# Installation Instructions (Arch Linux)
+1. 
+
