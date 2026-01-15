@@ -2,7 +2,9 @@
 Learning OpenGL in C++
 
 # Requirements (Mac)
-- glm
+- glm (brew install glm)
+- GLFW
+- glad
+- stb
 
-brew install glm
 
