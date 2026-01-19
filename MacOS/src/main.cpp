@@ -13,7 +13,6 @@
 #include <string>
 #include <unistd.h>
 
-// Callback for window resizing
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
@@ -79,7 +78,7 @@ int main() {
 
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-    // ----- VAO & VBO Setup -----
+    // ----- VAO and VBO Setup -----
     unsigned int VAO, VBO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
@@ -99,7 +98,6 @@ int main() {
     int success;
     char infoLog[512];
 
-    // Vertex shader
     unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
     std::string vertShaderSrc = loadShaderSrc("../shaders/vertex_core.glsl");
     const char* vertShader = vertShaderSrc.c_str();
@@ -112,7 +110,6 @@ int main() {
         std::cout << "Vertex shader compilation error:\n" << infoLog << std::endl;
     }
 
-    // Fragment shader
     unsigned int fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     std::string fragShaderSrc = loadShaderSrc("../shaders/fragment_core.glsl");
     const char* fragShader = fragShaderSrc.c_str();
