@@ -30,17 +30,20 @@ void processInput(GLFWwindow *window) {
         glfwSetWindowShouldClose(window, true); 
 }
 
-std::vector< float > worldspaceConverter(int width, int height, double xCoordinate, double yCoordinate) {
-    std::cout << width << " " << height << std::endl << std::endl;
-    float xNormal = xCoordinate/width;
-    float yNormal = yCoordinate/height;
-    std::vector< float > vertexes;
-    vertexes.push_back(xNormal);
-    vertexes.push_back(yNormal);
-    vertexes.push_back(0.0f);
-
-    return vertexes;
+std::vector<float> worldspaceConverter(int width, int height, float xVal, float yVal, bool normalized) {
+    if (!normalized) {
+        return {
+            xVal / width,
+            yVal / height,
+        };
+    } else {
+        return {
+            xVal * width,
+            yVal * height
+        };
+    }
 }
+
 
 
 float vertices[] = {
@@ -52,10 +55,6 @@ float vertices[] = {
     -0.5f, -0.5f, 0.0f, 
      0.5f,  0.5f, 0.0f, 
     -0.5f,  0.5f, 0.0f,
-    
-    -1.0f, -1.0f, 0.0f,
-    1.0f, -1.0f, 0.0f,
-    1.0f, 0.8f, 0.0f
 
 };
 
@@ -101,6 +100,10 @@ int main() {
     }
 
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    std::vector < float > v = worldspaceConverter(windowWidth, windowHeight, 0.5, 0.5, true);
+    float* arr_ptr = v.data();
+
 
     // ----- VAO and VBO Setup -----
     unsigned int VAO, VBO;
@@ -161,11 +164,14 @@ int main() {
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
-    std::vector v = worldspaceConverter(windowWidth, windowHeight, 400, 400);
+
+    // Testing 
 
     for (float f : v) {
         std::cout << f << std::endl;
     };
+
+
 
     // ----- Render Loop -----
     while (!glfwWindowShouldClose(window)) {
@@ -175,7 +181,7 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT);
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 9);
+        glDrawArrays(GL_TRIANGLES, 0, 6);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
