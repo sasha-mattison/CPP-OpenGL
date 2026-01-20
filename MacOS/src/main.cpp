@@ -13,14 +13,25 @@
 #include <string>
 #include <unistd.h>
 
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
+
+int windowWidth = 800, windowHeight = 600;
+
+
+void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
+    windowWidth = width;
+    windowHeight = height;
+
 }
 
 void processInput(GLFWwindow *window) {
     if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true); 
+}
+
+float worldspaceConverter(int width, int height, double xCoordinate, double yCoordinate) {
+    std::cout << width << " " << height << std::endl;
+
 }
 
 float vertices[] = {
@@ -31,7 +42,11 @@ float vertices[] = {
 
     -0.5f, -0.5f, 0.0f, 
      0.5f,  0.5f, 0.0f, 
-    -0.5f,  0.5f, 0.0f  
+    -0.5f,  0.5f, 0.0f,
+    
+    -1.0f, -1.0f, 0.0f,
+    1.0f, -1.0f, 0.0f,
+    1.0f, 0.8f, 0.0f
 
 };
 
@@ -63,7 +78,7 @@ int main() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
-    GLFWwindow* window = glfwCreateWindow(800, 800, "OpenGL Window", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(windowWidth, windowHeight, "OpenGL Window", NULL, NULL);
     if (!window) {
         std::cout << "Could not create window\n";
         glfwTerminate();
@@ -137,6 +152,8 @@ int main() {
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
+    worldspaceConverter(windowWidth, windowHeight, 400, 400);
+
     // ----- Render Loop -----
     while (!glfwWindowShouldClose(window)) {
         processInput(window);
@@ -146,7 +163,7 @@ int main() {
 
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 6);
+        glDrawArrays(GL_TRIANGLES, 0, 9);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
