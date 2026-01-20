@@ -12,6 +12,7 @@
 #include <sstream>
 #include <string>
 #include <unistd.h>
+#include <vector>
 
 
 int windowWidth = 800, windowHeight = 600;
@@ -29,10 +30,18 @@ void processInput(GLFWwindow *window) {
         glfwSetWindowShouldClose(window, true); 
 }
 
-float worldspaceConverter(int width, int height, double xCoordinate, double yCoordinate) {
-    std::cout << width << " " << height << std::endl;
+std::vector< float > worldspaceConverter(int width, int height, double xCoordinate, double yCoordinate) {
+    std::cout << width << " " << height << std::endl << std::endl;
+    float xNormal = xCoordinate/width;
+    float yNormal = yCoordinate/height;
+    std::vector< float > vertexes;
+    vertexes.push_back(xNormal);
+    vertexes.push_back(yNormal);
+    vertexes.push_back(0.0f);
 
+    return vertexes;
 }
+
 
 float vertices[] = {
 
@@ -67,7 +76,7 @@ std::string loadShaderSrc(const char* filename) {
 }
 
 int main() {
-    std::cout << "Program Started" << std::endl;
+    std::cout << "Program Started" << std::endl <<std::endl;
 
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -152,7 +161,11 @@ int main() {
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
-    worldspaceConverter(windowWidth, windowHeight, 400, 400);
+    std::vector v = worldspaceConverter(windowWidth, windowHeight, 400, 400);
+
+    for (float f : v) {
+        std::cout << f << std::endl;
+    };
 
     // ----- Render Loop -----
     while (!glfwWindowShouldClose(window)) {
@@ -160,7 +173,6 @@ int main() {
 
         glClearColor(0.0f, 0.3f, 0.7f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
-
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 9);
