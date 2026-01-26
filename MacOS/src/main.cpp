@@ -16,13 +16,19 @@
 
 
 int windowWidth = 800, windowHeight = 600;
-
+bool apple = false;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
     windowWidth = width;
     windowHeight = height;
 
+    if(apple) {
+            std::cout << windowWidth/2 << " " << windowHeight/2 << std::endl;
+    }
+    else {
+    std::cout << windowWidth << " " << windowHeight << std::endl;
+    }
 }
 
 void processInput(GLFWwindow *window) {
@@ -45,16 +51,10 @@ std::vector<float> worldspaceConverter(int width, int height, float xVal, float 
 }
 
 
-
-float vertices[] = {
-
+std::array<float, 9> vertices[] = {
     -0.5f, -0.5f, 0.0f, 
      0.5f, -0.5f, 0.0f, 
-     0.5f,  0.5f, 0.0f, 
-
-    -0.5f, -0.5f, 0.0f, 
-     0.5f,  0.5f, 0.0f, 
-    -0.5f,  0.5f, 0.0f,
+     0.0f,  0.5f, 0.0f, 
 
 };
 
@@ -84,6 +84,7 @@ int main() {
 
 #ifdef __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    apple = true;
 #endif
 
     GLFWwindow* window = glfwCreateWindow(windowWidth, windowHeight, "OpenGL Window", NULL, NULL);
@@ -103,7 +104,6 @@ int main() {
 
     std::vector < float > v = worldspaceConverter(windowWidth, windowHeight, 0.5, 0.5, true);
     float* arr_ptr = v.data();
-
 
     // ----- VAO and VBO Setup -----
     unsigned int VAO, VBO;
@@ -171,8 +171,6 @@ int main() {
         std::cout << f << std::endl;
     };
 
-
-
     // ----- Render Loop -----
     while (!glfwWindowShouldClose(window)) {
         processInput(window);
@@ -181,7 +179,7 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT);
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 6);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
