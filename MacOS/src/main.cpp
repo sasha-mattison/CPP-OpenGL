@@ -50,13 +50,35 @@ std::vector<float> worldspaceConverter(int width, int height, float xVal, float 
     }
 }
 
+std::vector<float> p1 = {-0.5f, -0.5f, 0.0f};
+std::vector<float> p2 = {0.5f, -0.5f, 0.0f};
+std::vector<float> p3 = {0.5f, -0.5f, 0.0f};
 
-std::array<float, 9> vertices[] = {
-    -0.5f, -0.5f, 0.0f, 
-     0.5f, -0.5f, 0.0f, 
-     0.0f,  0.5f, 0.0f, 
+std::vector<float> convertVectors(std::vector<float> v1, std::vector<float> v2, std::vector<float> v3) {
+    size_t vecSize = v1.size() + v2.size() + v3.size();
+    std::vector<float> finalVector;
+    finalVector.reserve(vecSize);
+    finalVector.insert(finalVector.end(), v1.begin(), v1.end());
+    finalVector.insert(finalVector.end(), v2.begin(), v2.end());
+    finalVector.insert(finalVector.end(), v3.begin(), v3.end());
+
+    return finalVector;
+}
+
+
+
+float vertices[] = {
+        -0.5f, -0.5f, 0.0f, 
+        0.5f, -0.5f, 0.0f, 
+        0.5f, -0.5f, 0.0f, 
 
 };
+
+
+void changeVertices(int arrayLength, float * array) {
+    std::cout << array[1] << std::endl;
+}
+
 
 // Load shader source from file
 std::string loadShaderSrc(const char* filename) {
@@ -76,6 +98,7 @@ std::string loadShaderSrc(const char* filename) {
 
 int main() {
     std::cout << "Program Started" << std::endl <<std::endl;
+    std::vector<float> triangle = convertVectors(p1, p2, p3);
 
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -102,9 +125,6 @@ int main() {
 
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-    std::vector < float > v = worldspaceConverter(windowWidth, windowHeight, 0.5, 0.5, true);
-    float* arr_ptr = v.data();
-
     // ----- VAO and VBO Setup -----
     unsigned int VAO, VBO;
     glGenVertexArrays(1, &VAO);
@@ -113,7 +133,7 @@ int main() {
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_DYNAMIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(triangle), triangle.data(), GL_DYNAMIC_DRAW);
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
@@ -164,12 +184,9 @@ int main() {
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
+    //Testing
 
-    // Testing 
-
-    for (float f : v) {
-        std::cout << f << std::endl;
-    };
+    
 
     // ----- Render Loop -----
     while (!glfwWindowShouldClose(window)) {
