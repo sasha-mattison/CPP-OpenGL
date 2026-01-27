@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/sasha/CPP/Linux-aarch64/build/cmake_install.cmake"
+		"/Users/sashamattison/CPP/MacOS/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

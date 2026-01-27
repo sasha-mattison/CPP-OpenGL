@@ -1,20 +1,38 @@
 [
 {
-  "directory": "/home/sasha/CPP/Linux-aarch64/build",
-  "command": "/usr/bin/aarch64-unknown-linux-gnu-g++  -I/home/sasha/CPP/Linux-aarch64/dependencies/include -I/home/sasha/CPP/Linux-aarch64/src -g -std=gnu++17 -o CMakeFiles/app.dir/src/glad.cpp.o -c /home/sasha/CPP/Linux-aarch64/src/glad.cpp",
-  "file": "/home/sasha/CPP/Linux-aarch64/src/glad.cpp",
-  "output": "CMakeFiles/app.dir/src/glad.cpp.o"
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/mesh/mesh.cpp.o -c /Users/sashamattison/CPP/MacOS/mesh/mesh.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/mesh/mesh.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/mesh/mesh.cpp.o"
 },
 {
-  "directory": "/home/sasha/CPP/Linux-aarch64/build",
-  "command": "/usr/bin/aarch64-unknown-linux-gnu-g++  -I/home/sasha/CPP/Linux-aarch64/dependencies/include -I/home/sasha/CPP/Linux-aarch64/src -g -std=gnu++17 -o CMakeFiles/app.dir/src/main.cpp.o -c /home/sasha/CPP/Linux-aarch64/src/main.cpp",
-  "file": "/home/sasha/CPP/Linux-aarch64/src/main.cpp",
-  "output": "CMakeFiles/app.dir/src/main.cpp.o"
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/shaders/shader.cpp.o -c /Users/sashamattison/CPP/MacOS/shaders/shader.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/shaders/shader.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/shaders/shader.cpp.o"
 },
 {
-  "directory": "/home/sasha/CPP/Linux-aarch64/build",
-  "command": "/usr/bin/aarch64-unknown-linux-gnu-g++  -I/home/sasha/CPP/Linux-aarch64/dependencies/include -I/home/sasha/CPP/Linux-aarch64/src -g -std=gnu++17 -o CMakeFiles/app.dir/src/stb.cpp.o -c /home/sasha/CPP/Linux-aarch64/src/stb.cpp",
-  "file": "/home/sasha/CPP/Linux-aarch64/src/stb.cpp",
-  "output": "CMakeFiles/app.dir/src/stb.cpp.o"
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/glad.cpp.o -c /Users/sashamattison/CPP/MacOS/src/glad.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/src/glad.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/glad.cpp.o"
+},
+{
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/main.cpp.o -c /Users/sashamattison/CPP/MacOS/src/main.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/src/main.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/stb.cpp.o -c /Users/sashamattison/CPP/MacOS/src/stb.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/src/stb.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/stb.cpp.o"
+},
+{
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/window/window.cpp.o -c /Users/sashamattison/CPP/MacOS/window/window.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/window/window.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/window/window.cpp.o"
 }
 ]
