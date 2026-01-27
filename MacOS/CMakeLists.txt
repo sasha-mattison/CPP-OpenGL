@@ -10,8 +10,8 @@ file(GLOB SRC
     ${PROJECT_SOURCE_DIR}/src/*.cpp
     ${PROJECT_SOURCE_DIR}/src/glad.cpp
     ${PROJECT_SOURCE_DIR}/shaders/*.cpp
-
-
+    ${PROJECT_SOURCE_DIR}/mesh/*.cpp
+    ${PROJECT_SOURCE_DIR}/window/*.cpp
 )
 
 # Include directories
