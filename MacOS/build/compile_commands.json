@@ -1,6 +1,12 @@
 [
 {
   "directory": "/Users/sashamattison/CPP/MacOS/build",
+  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/shaders/shader.cpp.o -c /Users/sashamattison/CPP/MacOS/shaders/shader.cpp",
+  "file": "/Users/sashamattison/CPP/MacOS/shaders/shader.cpp",
+  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/shaders/shader.cpp.o"
+},
+{
+  "directory": "/Users/sashamattison/CPP/MacOS/build",
   "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/glad.cpp.o -c /Users/sashamattison/CPP/MacOS/src/glad.cpp",
   "file": "/Users/sashamattison/CPP/MacOS/src/glad.cpp",
   "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/glad.cpp.o"

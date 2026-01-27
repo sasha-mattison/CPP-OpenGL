@@ -9,13 +9,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB SRC
     ${PROJECT_SOURCE_DIR}/src/*.cpp
     ${PROJECT_SOURCE_DIR}/src/glad.cpp
+    ${PROJECT_SOURCE_DIR}/shaders/*.cpp
+
+
 )
 
 # Include directories
 include_directories(
     ${PROJECT_SOURCE_DIR}/dependencies/include
     ${PROJECT_SOURCE_DIR}/src
-    /opt/homebrew/include  
+    /opt/homebrew/include
 )
 
 # Create executable
