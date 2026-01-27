@@ -85,15 +85,6 @@ build CMakeFiles/app.dir/src/main.cpp.o: CXX_COMPILER__app_unscanned_Debug /User
   OBJECT_FILE_DIR = CMakeFiles/app.dir/src
   TARGET_SUPPORT_DIR = CMakeFiles/app.dir
 
-build CMakeFiles/app.dir/src/stb.cpp.o: CXX_COMPILER__app_unscanned_Debug /Users/sashamattison/CPP/MacOS/src/stb.cpp || cmake_object_order_depends_target_app
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles/app.dir/src/stb.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated
-  INCLUDES = -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/app.dir
-  OBJECT_FILE_DIR = CMakeFiles/app.dir/src
-  TARGET_SUPPORT_DIR = CMakeFiles/app.dir
-
 build CMakeFiles/app.dir/window/window.cpp.o: CXX_COMPILER__app_unscanned_Debug /Users/sashamattison/CPP/MacOS/window/window.cpp || cmake_object_order_depends_target_app
   CONFIG = Debug
   DEP_FILE = CMakeFiles/app.dir/window/window.cpp.o.d
@@ -111,7 +102,7 @@ build CMakeFiles/app.dir/window/window.cpp.o: CXX_COMPILER__app_unscanned_Debug 
 #############################################
 # Link the executable app
 
-build app: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/mesh/mesh.cpp.o CMakeFiles/app.dir/shaders/shader.cpp.o CMakeFiles/app.dir/src/glad.cpp.o CMakeFiles/app.dir/src/main.cpp.o CMakeFiles/app.dir/src/stb.cpp.o CMakeFiles/app.dir/window/window.cpp.o | /Users/sashamattison/CPP/MacOS/dependencies/library/libglfw.3.4.dylib
+build app: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/mesh/mesh.cpp.o CMakeFiles/app.dir/shaders/shader.cpp.o CMakeFiles/app.dir/src/glad.cpp.o CMakeFiles/app.dir/src/main.cpp.o CMakeFiles/app.dir/window/window.cpp.o | /Users/sashamattison/CPP/MacOS/dependencies/library/libglfw.3.4.dylib
   CONFIG = Debug
   FLAGS = -g -arch arm64
   LINK_FLAGS = -Wl,-search_paths_first -Wl,-headerpad_max_install_names

@@ -53,9 +53,9 @@ int main() {
 
         float t = static_cast<float>(glfwGetTime());
         verts.data = {
-            -0.5f, -0.5f + sin(t) * 0.2f, 0.0f,
-             0.5f, -0.5f - sin(t) * 0.2f, 0.0f,
-             0.0f + sin(t) * 0.2f,  0.5f, 0.0f
+            -0.5f, -0.5f * sin(t), 0.0f,
+             0.5f, -0.5f * sin(t), 0.0f,
+             0.0f,  0.5f * sin(t), 0.0f
         };
         triangle.updateVertices(verts);
 
