@@ -42,6 +42,7 @@ int main() {
         "../shaders/fragment_core.glsl"
     );
 
+    // Render Loop
     while (!window.shouldClose()) {
         window.processInput();
 

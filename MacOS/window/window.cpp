@@ -30,7 +30,6 @@ Window::Window(int w, int h, const char* title)
 
     glfwMakeContextCurrent(window);
 
-    // Set a pointer to this instance for static callback
     glfwSetWindowUserPointer(window, this);
 }
 
