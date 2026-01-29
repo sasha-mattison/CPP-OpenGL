@@ -1,17 +1,14 @@
 # ninja log v7
 4	68	1769539335683197604	CMakeFiles/app.dir/src/glad.cpp.o	259ab5f089300915
 7	493	1769544465909797312	CMakeFiles/app.dir/src/stb.cpp.o	45ac21f1e1bfe493
-3	423	1769549269496975939	CMakeFiles/app.dir/src/main.cpp.o	be95adda217304b4
-423	540	1769549269916587390	app	996c7496905097da
+5	412	1769549313086270767	CMakeFiles/app.dir/src/main.cpp.o	be95adda217304b4
+412	590	1769549313493018591	app	e75097612dd62f7c
 12	527	1769538405768711621	CMakeFiles/app.dir/src/shader.cpp.o	47ef07feace83bbf
-26	835	1769548885070198963	CMakeFiles/app.dir/shaders/shader.cpp.o	8e1162c480bf7623
-4	505	1769544181369047168	CMakeFiles/app.dir/mesh/mesh.cpp.o	3679a7ecc00683c5
-29	771	1769548885073427810	CMakeFiles/app.dir/window/window.cpp.o	c6e9062fbf21134c
+5	375	1769549313086090475	CMakeFiles/app.dir/shaders/shader.cpp.o	8e1162c480bf7623
+5	305	1769549313085781267	CMakeFiles/app.dir/mesh/mesh.cpp.o	3679a7ecc00683c5
+6	316	1769549313086429559	CMakeFiles/app.dir/window/window.cpp.o	c6e9062fbf21134c
 5	450	1769549092223420160	CMakeFiles/app.dir/src/mesh/mesh.cpp.o	abad90aa11dd69b6
 5	454	1769549092223767743	CMakeFiles/app.dir/src/window/window.cpp.o	63ee4a3572c43486
 5	504	1769549092223593410	CMakeFiles/app.dir/src/shaders/shader.cpp.o	b95b60f4ad793c53
-5	305	1769549313085781267	CMakeFiles/app.dir/mesh/mesh.cpp.o	3679a7ecc00683c5
-6	316	1769549313086429559	CMakeFiles/app.dir/window/window.cpp.o	c6e9062fbf21134c
-5	375	1769549313086090475	CMakeFiles/app.dir/shaders/shader.cpp.o	8e1162c480bf7623
-5	412	1769549313086270767	CMakeFiles/app.dir/src/main.cpp.o	be95adda217304b4
-412	590	1769549313493018591	app	e75097612dd62f7c
+4	510	1769648556266315621	CMakeFiles/app.dir/src/main.cpp.o	be95adda217304b4
+510	786	1769648556772721428	app	e75097612dd62f7c
