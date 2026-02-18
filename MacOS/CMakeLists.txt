@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 project(app LANGUAGES CXX)
 
-# Use C++17
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -21,7 +20,6 @@ include_directories(
     /opt/homebrew/include
 )
 
-# Create executable
 add_executable(${PROJECT_NAME} ${SRC})
 
 # Link libraries
@@ -34,5 +32,4 @@ target_link_libraries(${PROJECT_NAME}
     "-framework CoreFoundation"
 )
 
-# Optional: suppress warnings
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wno-deprecated)

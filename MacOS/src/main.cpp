@@ -29,13 +29,24 @@ int main() {
     std::vector<float> vertexData = {
         -0.5f, -0.5f, 0.0f,
          0.5f, -0.5f, 0.0f,
-         0.0f,  0.5f, 0.0f
+         0.5f,  0.5f, 0.0f,
+    };
+
+    std::vector<float> vertexData2 = {
+        -0.5f, -0.5f, 0.0f,
+         -0.5f, 0.5f, 0.0f,
+         0.5f,  0.5f, 0.0f,
     };
 
     Vertices verts(3);
     verts.data = vertexData;
 
+    Vertices verts2(3);
+    verts2.data = vertexData2;
+
     Mesh triangle(verts, true);
+
+    Mesh triangle2(verts2, true);
 
     Shader shader(
         "../shaders/vertex_core.glsl",
@@ -51,15 +62,8 @@ int main() {
 
         shader.use();
 
-        float t = static_cast<float>(glfwGetTime());
-        verts.data = {
-            -0.5f, -0.5f * sin(t), 0.0f,
-             0.5f, -0.5f * sin(t), 0.0f,
-             0.0f,  0.5f * sin(t), 0.0f
-        };
-        triangle.updateVertices(verts);
-
         triangle.draw();
+        triangle2.draw();
 
         window.swapBuffers();
         window.pollEvents();
