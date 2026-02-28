@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 project(app LANGUAGES CXX)
 
-# Use C++17
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -9,28 +8,52 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB SRC
     ${PROJECT_SOURCE_DIR}/src/*.cpp
     ${PROJECT_SOURCE_DIR}/src/glad.cpp
+    ${PROJECT_SOURCE_DIR}/shaders/*.cpp
+    ${PROJECT_SOURCE_DIR}/mesh/*.cpp
+    ${PROJECT_SOURCE_DIR}/window/*.cpp
 )
 
-# Include directories
+# Common include directories
 include_directories(
-    ${PROJECT_SOURCE_DIR}/dependencies/include  # stb, glad, etc
-    ${PROJECT_SOURCE_DIR}/src                  # your own headers
-    /usr/include                               # system includes (GLM usually here)
+    ${PROJECT_SOURCE_DIR}/dependencies/include
+    ${PROJECT_SOURCE_DIR}/mesh
+    ${PROJECT_SOURCE_DIR}/shaders
+    ${PROJECT_SOURCE_DIR}/window
+    ${PROJECT_SOURCE_DIR}/src
 )
 
-# Create executable
 add_executable(${PROJECT_NAME} ${SRC})
 
-# Find system libraries
+# Common compile options
+target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wno-deprecated)
+
 find_package(OpenGL REQUIRED)
 
-# Link libraries
-target_link_libraries(${PROJECT_NAME}
-    glfw           # GLFW (installed via pacman or apt)
-    ${OPENGL_gl_LIBRARY}  # OpenGL
-    dl              # dynamic loader
-    pthread         # threading (required by GLFW)
-    X11             # X11 window system
-    Xrandr          # X11 extension for resizing
-    Xi              # X11 input
-)
+# Platform-specific linking and includes
+if(APPLE)
+    # macOS specific configurations
+    include_directories(/opt/homebrew/include)
+    
+    target_link_libraries(${PROJECT_NAME}
+        "${PROJECT_SOURCE_DIR}/dependencies/library/libglfw.3.4.dylib"
+        "-framework OpenGL"
+        "-framework Cocoa"
+        "-framework IOKit"
+        "-framework CoreVideo"
+        "-framework CoreFoundation"
+    )
+
+elseif(UNIX AND NOT APPLE)
+    # Linux specific configurations
+    include_directories(/usr/include)
+    
+    target_link_libraries(${PROJECT_NAME}
+        glfw          
+        ${OPENGL_gl_LIBRARY} 
+        dl             
+        pthread       
+        X11          
+        Xrandr       
+        Xi     
+    )
+endif()
