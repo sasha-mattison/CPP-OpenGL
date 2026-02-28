@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/app.dir/link.d CMakeFiles/app.dir/mesh/mesh.cpp.o CMakeFiles/app.dir/shaders/shader.cpp.o CMakeFiles/app.dir/src/glad.cpp.o CMakeFiles/app.dir/src/main.cpp.o CMakeFiles/app.dir/window/window.cpp.o -o app  -lglfw -ldl -lpthread -lX11 -lXrandr -lXi
