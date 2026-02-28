@@ -1,0 +1,7 @@
+# ninja log v7
+1	219	1772248513977920691	CMakeFiles/app.dir/src/glad.cpp.o	4557251c75576de3
+0	584	1772248513977271902	CMakeFiles/app.dir/mesh/mesh.cpp.o	10b706d564f21017
+2	599	1772248513978724981	CMakeFiles/app.dir/window/window.cpp.o	3dea371f1867e117
+1	658	1772248513977638442	CMakeFiles/app.dir/shaders/shader.cpp.o	b92f05d1858aa8c4
+1	697	1772248513978304190	CMakeFiles/app.dir/src/main.cpp.o	e80cd3a1db5a3bb9
+697	818	1772248514674100184	app	3519225a3c769651
