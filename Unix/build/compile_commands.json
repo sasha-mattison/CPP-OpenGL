@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Unix/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Unix/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Unix/mesh -I/home/cat/GitHub/CPP-OpenGL/Unix/shaders -I/home/cat/GitHub/CPP-OpenGL/Unix/window -I/home/cat/GitHub/CPP-OpenGL/Unix/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/mesh/mesh.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/mesh/mesh.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Unix/mesh/mesh.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles/app.dir/mesh/mesh.cpp.o"
+},
+{
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Unix/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Unix/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Unix/mesh -I/home/cat/GitHub/CPP-OpenGL/Unix/shaders -I/home/cat/GitHub/CPP-OpenGL/Unix/window -I/home/cat/GitHub/CPP-OpenGL/Unix/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/shaders/shader.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/shaders/shader.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Unix/shaders/shader.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles/app.dir/shaders/shader.cpp.o"
+},
+{
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Unix/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Unix/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Unix/mesh -I/home/cat/GitHub/CPP-OpenGL/Unix/shaders -I/home/cat/GitHub/CPP-OpenGL/Unix/window -I/home/cat/GitHub/CPP-OpenGL/Unix/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/glad.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/src/glad.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Unix/src/glad.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles/app.dir/src/glad.cpp.o"
+},
+{
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Unix/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Unix/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Unix/mesh -I/home/cat/GitHub/CPP-OpenGL/Unix/shaders -I/home/cat/GitHub/CPP-OpenGL/Unix/window -I/home/cat/GitHub/CPP-OpenGL/Unix/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/main.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/src/main.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Unix/src/main.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Unix/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Unix/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Unix/mesh -I/home/cat/GitHub/CPP-OpenGL/Unix/shaders -I/home/cat/GitHub/CPP-OpenGL/Unix/window -I/home/cat/GitHub/CPP-OpenGL/Unix/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/window/window.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/window/window.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Unix/window/window.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles/app.dir/window/window.cpp.o"
+}
+]

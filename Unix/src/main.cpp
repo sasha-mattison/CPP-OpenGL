@@ -49,8 +49,8 @@ int main() {
     Mesh triangle2(verts2, true);
 
     Shader shader(
-        "../shaders/vertex_core.glsl",
-        "../shaders/fragment_core.glsl"
+        "shaders/vertex_core.glsl",
+        "shaders/fragment_core.glsl"
     );
 
     // Render Loop
