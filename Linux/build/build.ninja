@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/sashamattison/CPP/MacOS/build/
+cmake_ninja_workdir = /home/cat/GitHub/CPP-OpenGL/Linux/build/
 # =============================================================================
 # Object build statements for EXECUTABLE target app
 
@@ -49,56 +49,47 @@ cmake_ninja_workdir = /Users/sashamattison/CPP/MacOS/build/
 
 build cmake_object_order_depends_target_app: phony || .
 
-build CMakeFiles/app.dir/mesh/mesh.cpp.o: CXX_COMPILER__app_unscanned_Debug /Users/sashamattison/CPP/MacOS/mesh/mesh.cpp || cmake_object_order_depends_target_app
+build CMakeFiles/app.dir/mesh/mesh.cpp.o: CXX_COMPILER__app_unscanned_Debug /home/cat/GitHub/CPP-OpenGL/Linux/mesh/mesh.cpp || cmake_object_order_depends_target_app
   CONFIG = Debug
   DEP_FILE = CMakeFiles/app.dir/mesh/mesh.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated
-  INCLUDES = -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include
+  FLAGS = -g -std=gnu++17 -Wall -Wno-deprecated
+  INCLUDES = -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src
   OBJECT_DIR = CMakeFiles/app.dir
   OBJECT_FILE_DIR = CMakeFiles/app.dir/mesh
   TARGET_SUPPORT_DIR = CMakeFiles/app.dir
 
-build CMakeFiles/app.dir/shaders/shader.cpp.o: CXX_COMPILER__app_unscanned_Debug /Users/sashamattison/CPP/MacOS/shaders/shader.cpp || cmake_object_order_depends_target_app
+build CMakeFiles/app.dir/shaders/shader.cpp.o: CXX_COMPILER__app_unscanned_Debug /home/cat/GitHub/CPP-OpenGL/Linux/shaders/shader.cpp || cmake_object_order_depends_target_app
   CONFIG = Debug
   DEP_FILE = CMakeFiles/app.dir/shaders/shader.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated
-  INCLUDES = -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include
+  FLAGS = -g -std=gnu++17 -Wall -Wno-deprecated
+  INCLUDES = -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src
   OBJECT_DIR = CMakeFiles/app.dir
   OBJECT_FILE_DIR = CMakeFiles/app.dir/shaders
   TARGET_SUPPORT_DIR = CMakeFiles/app.dir
 
-build CMakeFiles/app.dir/src/glad.cpp.o: CXX_COMPILER__app_unscanned_Debug /Users/sashamattison/CPP/MacOS/src/glad.cpp || cmake_object_order_depends_target_app
+build CMakeFiles/app.dir/src/glad.cpp.o: CXX_COMPILER__app_unscanned_Debug /home/cat/GitHub/CPP-OpenGL/Linux/src/glad.cpp || cmake_object_order_depends_target_app
   CONFIG = Debug
   DEP_FILE = CMakeFiles/app.dir/src/glad.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated
-  INCLUDES = -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include
+  FLAGS = -g -std=gnu++17 -Wall -Wno-deprecated
+  INCLUDES = -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src
   OBJECT_DIR = CMakeFiles/app.dir
   OBJECT_FILE_DIR = CMakeFiles/app.dir/src
   TARGET_SUPPORT_DIR = CMakeFiles/app.dir
 
-build CMakeFiles/app.dir/src/main.cpp.o: CXX_COMPILER__app_unscanned_Debug /Users/sashamattison/CPP/MacOS/src/main.cpp || cmake_object_order_depends_target_app
+build CMakeFiles/app.dir/src/main.cpp.o: CXX_COMPILER__app_unscanned_Debug /home/cat/GitHub/CPP-OpenGL/Linux/src/main.cpp || cmake_object_order_depends_target_app
   CONFIG = Debug
   DEP_FILE = CMakeFiles/app.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated
-  INCLUDES = -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include
+  FLAGS = -g -std=gnu++17 -Wall -Wno-deprecated
+  INCLUDES = -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src
   OBJECT_DIR = CMakeFiles/app.dir
   OBJECT_FILE_DIR = CMakeFiles/app.dir/src
   TARGET_SUPPORT_DIR = CMakeFiles/app.dir
 
-build CMakeFiles/app.dir/src/stb.cpp.o: CXX_COMPILER__app_unscanned_Debug /Users/sashamattison/CPP/MacOS/src/stb.cpp || cmake_object_order_depends_target_app
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles/app.dir/src/stb.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated
-  INCLUDES = -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/app.dir
-  OBJECT_FILE_DIR = CMakeFiles/app.dir/src
-  TARGET_SUPPORT_DIR = CMakeFiles/app.dir
-
-build CMakeFiles/app.dir/window/window.cpp.o: CXX_COMPILER__app_unscanned_Debug /Users/sashamattison/CPP/MacOS/window/window.cpp || cmake_object_order_depends_target_app
+build CMakeFiles/app.dir/window/window.cpp.o: CXX_COMPILER__app_unscanned_Debug /home/cat/GitHub/CPP-OpenGL/Linux/window/window.cpp || cmake_object_order_depends_target_app
   CONFIG = Debug
   DEP_FILE = CMakeFiles/app.dir/window/window.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated
-  INCLUDES = -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include
+  FLAGS = -g -std=gnu++17 -Wall -Wno-deprecated
+  INCLUDES = -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src
   OBJECT_DIR = CMakeFiles/app.dir
   OBJECT_FILE_DIR = CMakeFiles/app.dir/window
   TARGET_SUPPORT_DIR = CMakeFiles/app.dir
@@ -111,11 +102,12 @@ build CMakeFiles/app.dir/window/window.cpp.o: CXX_COMPILER__app_unscanned_Debug 
 #############################################
 # Link the executable app
 
-build app: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/mesh/mesh.cpp.o CMakeFiles/app.dir/shaders/shader.cpp.o CMakeFiles/app.dir/src/glad.cpp.o CMakeFiles/app.dir/src/main.cpp.o CMakeFiles/app.dir/src/stb.cpp.o CMakeFiles/app.dir/window/window.cpp.o | /Users/sashamattison/CPP/MacOS/dependencies/library/libglfw.3.4.dylib
+build app: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/mesh/mesh.cpp.o CMakeFiles/app.dir/shaders/shader.cpp.o CMakeFiles/app.dir/src/glad.cpp.o CMakeFiles/app.dir/src/main.cpp.o CMakeFiles/app.dir/window/window.cpp.o
   CONFIG = Debug
-  FLAGS = -g -arch arm64
-  LINK_FLAGS = -Wl,-search_paths_first -Wl,-headerpad_max_install_names
-  LINK_LIBRARIES = /Users/sashamattison/CPP/MacOS/dependencies/library/libglfw.3.4.dylib  -framework OpenGL  -framework Cocoa  -framework IOKit  -framework CoreVideo  -framework CoreFoundation
+  DEP_FILE = CMakeFiles/app.dir/link.d
+  FLAGS = -g
+  LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/app.dir/link.d
+  LINK_LIBRARIES = -lglfw  -ldl  -lpthread  -lX11  -lXrandr  -lXi
   OBJECT_DIR = CMakeFiles/app.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -128,7 +120,7 @@ build app: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/mesh/mesh.cpp.o C
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/sashamattison/CPP/MacOS/build && /opt/homebrew/bin/ccmake -S/Users/sashamattison/CPP/MacOS -B/Users/sashamattison/CPP/MacOS/build
+  COMMAND = cd /home/cat/GitHub/CPP-OpenGL/Linux/build && /usr/bin/ccmake -S/home/cat/GitHub/CPP-OpenGL/Linux -B/home/cat/GitHub/CPP-OpenGL/Linux/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -140,7 +132,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/sashamattison/CPP/MacOS/build && /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/sashamattison/CPP/MacOS -B/Users/sashamattison/CPP/MacOS/build
+  COMMAND = cd /home/cat/GitHub/CPP-OpenGL/Linux/build && /usr/bin/cmake --regenerate-during-build -S/home/cat/GitHub/CPP-OpenGL/Linux -B/home/cat/GitHub/CPP-OpenGL/Linux/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -156,7 +148,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/sashamattison/CPP/MacOS/build
+# Folder: /home/cat/GitHub/CPP-OpenGL/Linux/build
 
 build all: phony app
 
@@ -167,14 +159,14 @@ build all: phony app
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /Users/sashamattison/CPP/MacOS/build/cmake_install.cmake: RERUN_CMAKE | /Users/sashamattison/CPP/MacOS/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.2/CMakeCXXCompiler.cmake CMakeFiles/4.2.2/CMakeSystem.cmake
+build build.ninja /home/cat/GitHub/CPP-OpenGL/Linux/build/cmake_install.cmake: RERUN_CMAKE | /home/cat/GitHub/CPP-OpenGL/Linux/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/sashamattison/CPP/MacOS/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.2/CMakeCXXCompiler.cmake CMakeFiles/4.2.2/CMakeSystem.cmake: phony
+build /home/cat/GitHub/CPP-OpenGL/Linux/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
 
 
 #############################################

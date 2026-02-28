@@ -1,38 +1,32 @@
 [
 {
-  "directory": "/Users/sashamattison/CPP/MacOS/build",
-  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/mesh/mesh.cpp.o -c /Users/sashamattison/CPP/MacOS/mesh/mesh.cpp",
-  "file": "/Users/sashamattison/CPP/MacOS/mesh/mesh.cpp",
-  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/mesh/mesh.cpp.o"
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Linux/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/mesh/mesh.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Linux/mesh/mesh.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Linux/mesh/mesh.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Linux/build/CMakeFiles/app.dir/mesh/mesh.cpp.o"
 },
 {
-  "directory": "/Users/sashamattison/CPP/MacOS/build",
-  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/shaders/shader.cpp.o -c /Users/sashamattison/CPP/MacOS/shaders/shader.cpp",
-  "file": "/Users/sashamattison/CPP/MacOS/shaders/shader.cpp",
-  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/shaders/shader.cpp.o"
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Linux/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/shaders/shader.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Linux/shaders/shader.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Linux/shaders/shader.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Linux/build/CMakeFiles/app.dir/shaders/shader.cpp.o"
 },
 {
-  "directory": "/Users/sashamattison/CPP/MacOS/build",
-  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/glad.cpp.o -c /Users/sashamattison/CPP/MacOS/src/glad.cpp",
-  "file": "/Users/sashamattison/CPP/MacOS/src/glad.cpp",
-  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/glad.cpp.o"
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Linux/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/glad.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Linux/src/glad.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Linux/src/glad.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Linux/build/CMakeFiles/app.dir/src/glad.cpp.o"
 },
 {
-  "directory": "/Users/sashamattison/CPP/MacOS/build",
-  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/main.cpp.o -c /Users/sashamattison/CPP/MacOS/src/main.cpp",
-  "file": "/Users/sashamattison/CPP/MacOS/src/main.cpp",
-  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/main.cpp.o"
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Linux/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/main.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Linux/src/main.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Linux/src/main.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Linux/build/CMakeFiles/app.dir/src/main.cpp.o"
 },
 {
-  "directory": "/Users/sashamattison/CPP/MacOS/build",
-  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/src/stb.cpp.o -c /Users/sashamattison/CPP/MacOS/src/stb.cpp",
-  "file": "/Users/sashamattison/CPP/MacOS/src/stb.cpp",
-  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/src/stb.cpp.o"
-},
-{
-  "directory": "/Users/sashamattison/CPP/MacOS/build",
-  "command": "/usr/bin/clang++ -I/Users/sashamattison/CPP/MacOS/dependencies/include -I/Users/sashamattison/CPP/MacOS/src -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -Wall -Wno-deprecated -o CMakeFiles/app.dir/window/window.cpp.o -c /Users/sashamattison/CPP/MacOS/window/window.cpp",
-  "file": "/Users/sashamattison/CPP/MacOS/window/window.cpp",
-  "output": "/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir/window/window.cpp.o"
+  "directory": "/home/cat/GitHub/CPP-OpenGL/Linux/build",
+  "command": "/usr/bin/g++ -I/home/cat/GitHub/CPP-OpenGL/Linux/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Linux/mesh -I/home/cat/GitHub/CPP-OpenGL/Linux/shaders -I/home/cat/GitHub/CPP-OpenGL/Linux/window -I/home/cat/GitHub/CPP-OpenGL/Linux/src -g -std=gnu++17 -Wall -Wno-deprecated -o CMakeFiles/app.dir/window/window.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Linux/window/window.cpp",
+  "file": "/home/cat/GitHub/CPP-OpenGL/Linux/window/window.cpp",
+  "output": "/home/cat/GitHub/CPP-OpenGL/Linux/build/CMakeFiles/app.dir/window/window.cpp.o"
 }
 ]
