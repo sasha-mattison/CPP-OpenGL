@@ -4,7 +4,6 @@ project(app LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Source files
 file(GLOB SRC
     ${PROJECT_SOURCE_DIR}/src/*.cpp
     ${PROJECT_SOURCE_DIR}/src/glad.cpp
@@ -13,7 +12,6 @@ file(GLOB SRC
     ${PROJECT_SOURCE_DIR}/window/*.cpp
 )
 
-# Common include directories
 include_directories(
     ${PROJECT_SOURCE_DIR}/dependencies/include
     ${PROJECT_SOURCE_DIR}/mesh
@@ -24,14 +22,12 @@ include_directories(
 
 add_executable(${PROJECT_NAME} ${SRC})
 
-# Common compile options
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wno-deprecated)
 
 find_package(OpenGL REQUIRED)
 
-# Platform-specific linking and includes
+# Check OS
 if(APPLE)
-    # macOS specific configurations
     include_directories(/opt/homebrew/include)
     
     target_link_libraries(${PROJECT_NAME}
@@ -44,7 +40,6 @@ if(APPLE)
     )
 
 elseif(UNIX AND NOT APPLE)
-    # Linux specific configurations
     include_directories(/usr/include)
     
     target_link_libraries(${PROJECT_NAME}
