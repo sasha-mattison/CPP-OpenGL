@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/app.dir/link.d"
   "CMakeFiles/app.dir/mesh/mesh.cpp.o"
   "CMakeFiles/app.dir/mesh/mesh.cpp.o.d"
   "CMakeFiles/app.dir/shaders/shader.cpp.o"

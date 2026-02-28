@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/cat/GitHub/CPP-OpenGL/Unix/mesh/mesh.cpp" "CMakeFiles/app.dir/mesh/mesh.cpp.o" "gcc" "CMakeFiles/app.dir/mesh/mesh.cpp.o.d"
-  "/home/cat/GitHub/CPP-OpenGL/Unix/shaders/shader.cpp" "CMakeFiles/app.dir/shaders/shader.cpp.o" "gcc" "CMakeFiles/app.dir/shaders/shader.cpp.o.d"
-  "/home/cat/GitHub/CPP-OpenGL/Unix/src/glad.cpp" "CMakeFiles/app.dir/src/glad.cpp.o" "gcc" "CMakeFiles/app.dir/src/glad.cpp.o.d"
-  "/home/cat/GitHub/CPP-OpenGL/Unix/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
-  "/home/cat/GitHub/CPP-OpenGL/Unix/window/window.cpp" "CMakeFiles/app.dir/window/window.cpp.o" "gcc" "CMakeFiles/app.dir/window/window.cpp.o.d"
-  "" "app" "gcc" "CMakeFiles/app.dir/link.d"
+  "/Users/sashamattison/CPP/Unix/mesh/mesh.cpp" "CMakeFiles/app.dir/mesh/mesh.cpp.o" "gcc" "CMakeFiles/app.dir/mesh/mesh.cpp.o.d"
+  "/Users/sashamattison/CPP/Unix/shaders/shader.cpp" "CMakeFiles/app.dir/shaders/shader.cpp.o" "gcc" "CMakeFiles/app.dir/shaders/shader.cpp.o.d"
+  "/Users/sashamattison/CPP/Unix/src/glad.cpp" "CMakeFiles/app.dir/src/glad.cpp.o" "gcc" "CMakeFiles/app.dir/src/glad.cpp.o.d"
+  "/Users/sashamattison/CPP/Unix/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
+  "/Users/sashamattison/CPP/Unix/window/window.cpp" "CMakeFiles/app.dir/window/window.cpp.o" "gcc" "CMakeFiles/app.dir/window/window.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

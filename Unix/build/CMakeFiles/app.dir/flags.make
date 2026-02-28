@@ -4,7 +4,9 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/cat/GitHub/CPP-OpenGL/Unix/dependencies/include -I/home/cat/GitHub/CPP-OpenGL/Unix/mesh -I/home/cat/GitHub/CPP-OpenGL/Unix/shaders -I/home/cat/GitHub/CPP-OpenGL/Unix/window -I/home/cat/GitHub/CPP-OpenGL/Unix/src
+CXX_INCLUDES = -I/Users/sashamattison/CPP/Unix/dependencies/include -I/Users/sashamattison/CPP/Unix/mesh -I/Users/sashamattison/CPP/Unix/shaders -I/Users/sashamattison/CPP/Unix/window -I/Users/sashamattison/CPP/Unix/src -I/opt/homebrew/include
 
-CXX_FLAGS = -std=gnu++17 -Wall -Wno-deprecated
+CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -Wall -Wno-deprecated
+
+CXX_FLAGS = -std=gnu++17 -arch arm64 -Wall -Wno-deprecated
 

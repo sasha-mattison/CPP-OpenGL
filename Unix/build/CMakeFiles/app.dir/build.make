@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cat/GitHub/CPP-OpenGL/Unix
+CMAKE_SOURCE_DIR = /Users/sashamattison/CPP/Unix
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cat/GitHub/CPP-OpenGL/Unix/build
+CMAKE_BINARY_DIR = /Users/sashamattison/CPP/Unix/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.dir/depend.make
@@ -73,74 +73,74 @@ CMakeFiles/app.dir/codegen:
 .PHONY : CMakeFiles/app.dir/codegen
 
 CMakeFiles/app.dir/mesh/mesh.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/mesh/mesh.cpp.o: /home/cat/GitHub/CPP-OpenGL/Unix/mesh/mesh.cpp
+CMakeFiles/app.dir/mesh/mesh.cpp.o: /Users/sashamattison/CPP/Unix/mesh/mesh.cpp
 CMakeFiles/app.dir/mesh/mesh.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/mesh/mesh.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/mesh/mesh.cpp.o -MF CMakeFiles/app.dir/mesh/mesh.cpp.o.d -o CMakeFiles/app.dir/mesh/mesh.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/mesh/mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sashamattison/CPP/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/mesh/mesh.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/mesh/mesh.cpp.o -MF CMakeFiles/app.dir/mesh/mesh.cpp.o.d -o CMakeFiles/app.dir/mesh/mesh.cpp.o -c /Users/sashamattison/CPP/Unix/mesh/mesh.cpp
 
 CMakeFiles/app.dir/mesh/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/mesh/mesh.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cat/GitHub/CPP-OpenGL/Unix/mesh/mesh.cpp > CMakeFiles/app.dir/mesh/mesh.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sashamattison/CPP/Unix/mesh/mesh.cpp > CMakeFiles/app.dir/mesh/mesh.cpp.i
 
 CMakeFiles/app.dir/mesh/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/mesh/mesh.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/GitHub/CPP-OpenGL/Unix/mesh/mesh.cpp -o CMakeFiles/app.dir/mesh/mesh.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sashamattison/CPP/Unix/mesh/mesh.cpp -o CMakeFiles/app.dir/mesh/mesh.cpp.s
 
 CMakeFiles/app.dir/shaders/shader.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/shaders/shader.cpp.o: /home/cat/GitHub/CPP-OpenGL/Unix/shaders/shader.cpp
+CMakeFiles/app.dir/shaders/shader.cpp.o: /Users/sashamattison/CPP/Unix/shaders/shader.cpp
 CMakeFiles/app.dir/shaders/shader.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/shaders/shader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/shaders/shader.cpp.o -MF CMakeFiles/app.dir/shaders/shader.cpp.o.d -o CMakeFiles/app.dir/shaders/shader.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/shaders/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sashamattison/CPP/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/shaders/shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/shaders/shader.cpp.o -MF CMakeFiles/app.dir/shaders/shader.cpp.o.d -o CMakeFiles/app.dir/shaders/shader.cpp.o -c /Users/sashamattison/CPP/Unix/shaders/shader.cpp
 
 CMakeFiles/app.dir/shaders/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/shaders/shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cat/GitHub/CPP-OpenGL/Unix/shaders/shader.cpp > CMakeFiles/app.dir/shaders/shader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sashamattison/CPP/Unix/shaders/shader.cpp > CMakeFiles/app.dir/shaders/shader.cpp.i
 
 CMakeFiles/app.dir/shaders/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/shaders/shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/GitHub/CPP-OpenGL/Unix/shaders/shader.cpp -o CMakeFiles/app.dir/shaders/shader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sashamattison/CPP/Unix/shaders/shader.cpp -o CMakeFiles/app.dir/shaders/shader.cpp.s
 
 CMakeFiles/app.dir/src/glad.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/glad.cpp.o: /home/cat/GitHub/CPP-OpenGL/Unix/src/glad.cpp
+CMakeFiles/app.dir/src/glad.cpp.o: /Users/sashamattison/CPP/Unix/src/glad.cpp
 CMakeFiles/app.dir/src/glad.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/glad.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/glad.cpp.o -MF CMakeFiles/app.dir/src/glad.cpp.o.d -o CMakeFiles/app.dir/src/glad.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/src/glad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sashamattison/CPP/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/glad.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/glad.cpp.o -MF CMakeFiles/app.dir/src/glad.cpp.o.d -o CMakeFiles/app.dir/src/glad.cpp.o -c /Users/sashamattison/CPP/Unix/src/glad.cpp
 
 CMakeFiles/app.dir/src/glad.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/glad.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cat/GitHub/CPP-OpenGL/Unix/src/glad.cpp > CMakeFiles/app.dir/src/glad.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sashamattison/CPP/Unix/src/glad.cpp > CMakeFiles/app.dir/src/glad.cpp.i
 
 CMakeFiles/app.dir/src/glad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/glad.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/GitHub/CPP-OpenGL/Unix/src/glad.cpp -o CMakeFiles/app.dir/src/glad.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sashamattison/CPP/Unix/src/glad.cpp -o CMakeFiles/app.dir/src/glad.cpp.s
 
 CMakeFiles/app.dir/src/main.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/main.cpp.o: /home/cat/GitHub/CPP-OpenGL/Unix/src/main.cpp
+CMakeFiles/app.dir/src/main.cpp.o: /Users/sashamattison/CPP/Unix/src/main.cpp
 CMakeFiles/app.dir/src/main.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.cpp.o -MF CMakeFiles/app.dir/src/main.cpp.o.d -o CMakeFiles/app.dir/src/main.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sashamattison/CPP/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.cpp.o -MF CMakeFiles/app.dir/src/main.cpp.o.d -o CMakeFiles/app.dir/src/main.cpp.o -c /Users/sashamattison/CPP/Unix/src/main.cpp
 
 CMakeFiles/app.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cat/GitHub/CPP-OpenGL/Unix/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sashamattison/CPP/Unix/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
 
 CMakeFiles/app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/GitHub/CPP-OpenGL/Unix/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sashamattison/CPP/Unix/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
 
 CMakeFiles/app.dir/window/window.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/window/window.cpp.o: /home/cat/GitHub/CPP-OpenGL/Unix/window/window.cpp
+CMakeFiles/app.dir/window/window.cpp.o: /Users/sashamattison/CPP/Unix/window/window.cpp
 CMakeFiles/app.dir/window/window.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/window/window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/window/window.cpp.o -MF CMakeFiles/app.dir/window/window.cpp.o.d -o CMakeFiles/app.dir/window/window.cpp.o -c /home/cat/GitHub/CPP-OpenGL/Unix/window/window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sashamattison/CPP/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/window/window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/window/window.cpp.o -MF CMakeFiles/app.dir/window/window.cpp.o.d -o CMakeFiles/app.dir/window/window.cpp.o -c /Users/sashamattison/CPP/Unix/window/window.cpp
 
 CMakeFiles/app.dir/window/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/window/window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cat/GitHub/CPP-OpenGL/Unix/window/window.cpp > CMakeFiles/app.dir/window/window.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sashamattison/CPP/Unix/window/window.cpp > CMakeFiles/app.dir/window/window.cpp.i
 
 CMakeFiles/app.dir/window/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/window/window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/GitHub/CPP-OpenGL/Unix/window/window.cpp -o CMakeFiles/app.dir/window/window.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sashamattison/CPP/Unix/window/window.cpp -o CMakeFiles/app.dir/window/window.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
@@ -159,9 +159,9 @@ app: CMakeFiles/app.dir/src/glad.cpp.o
 app: CMakeFiles/app.dir/src/main.cpp.o
 app: CMakeFiles/app.dir/window/window.cpp.o
 app: CMakeFiles/app.dir/build.make
-app: CMakeFiles/app.dir/compiler_depend.ts
+app: /Users/sashamattison/CPP/Unix/dependencies/library/libglfw.3.4.dylib
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sashamattison/CPP/Unix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -173,6 +173,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	cd /home/cat/GitHub/CPP-OpenGL/Unix/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cat/GitHub/CPP-OpenGL/Unix /home/cat/GitHub/CPP-OpenGL/Unix /home/cat/GitHub/CPP-OpenGL/Unix/build /home/cat/GitHub/CPP-OpenGL/Unix/build /home/cat/GitHub/CPP-OpenGL/Unix/build/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)" app
+	cd /Users/sashamattison/CPP/Unix/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sashamattison/CPP/Unix /Users/sashamattison/CPP/Unix /Users/sashamattison/CPP/Unix/build /Users/sashamattison/CPP/Unix/build /Users/sashamattison/CPP/Unix/build/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)" app
 .PHONY : CMakeFiles/app.dir/depend
 

@@ -7,9 +7,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB SRC
     ${PROJECT_SOURCE_DIR}/src/*.cpp
     ${PROJECT_SOURCE_DIR}/src/glad.cpp
-    ${PROJECT_SOURCE_DIR}/shaders/*.cpp
     ${PROJECT_SOURCE_DIR}/mesh/*.cpp
     ${PROJECT_SOURCE_DIR}/window/*.cpp
+    ${PROJECT_SOURCE_DIR}/shaders/*.glsl
+    ${PROJECT_SOURCE_DIR}/shaders/*.cpp
+
+
 )
 
 include_directories(

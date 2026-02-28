@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/cat/GitHub/CPP-OpenGL/Unix/build/cmake_install.cmake"
+		"/Users/sashamattison/CPP/Unix/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
