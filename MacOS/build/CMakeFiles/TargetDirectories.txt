@@ -1,3 +1,0 @@
-/Users/sashamattison/CPP/MacOS/build/CMakeFiles/app.dir
-/Users/sashamattison/CPP/MacOS/build/CMakeFiles/edit_cache.dir
-/Users/sashamattison/CPP/MacOS/build/CMakeFiles/rebuild_cache.dir
