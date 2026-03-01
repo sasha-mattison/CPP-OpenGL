@@ -12,6 +12,28 @@
 #include "../mesh/vertices.h"
 #include "../window/window.h"
 
+
+Mesh createTriangle(float bleft, float tright, int type) {
+
+    if (type == 1) {
+        std::vector<float> vertices = {
+            bleft, tright, 0.0f,
+            bleft, -tright, 0.0f,
+            -bleft, tright, 0.0f};
+        Vertices verts(3);
+        verts.data = vertices;
+        Mesh triangle(verts, true);
+        return triangle;
+    }
+    else if (type == 2) {
+
+    }
+    else {
+        throw std::runtime_error("Invalid triangle type");
+    };
+}
+
+
 int main() {
     std::cout << "Program Started" << std::endl << std::endl;
 
@@ -48,6 +70,8 @@ int main() {
 
     Mesh triangle2(verts2, true);
 
+    Mesh test = createTriangle(-0.5f, 0.5f, 1);
+
     Shader shader(
         "shaders/vertex_core.glsl",
         "shaders/fragment_core.glsl"
@@ -62,8 +86,9 @@ int main() {
 
         shader.use();
 
-        triangle.draw();
-        triangle2.draw();
+        //triangle.draw();
+        //triangle2.draw();
+        test.draw();
 
         window.swapBuffers();
         window.pollEvents();
