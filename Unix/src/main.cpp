@@ -13,19 +13,27 @@
 #include "../window/window.h"
 
 
-Mesh createTriangle(float bleft, float tright, int type) {
+Mesh createTriangle(float bleft, float tright, int mult , int type) {
 
     if (type == 1) {
         std::vector<float> vertices = {
-            bleft, tright, 0.0f,
-            bleft, -tright, 0.0f,
-            -bleft, tright, 0.0f};
+            mult*bleft, mult*tright, 0.0f,
+            mult*bleft, mult*-tright, 0.0f,
+            mult*-bleft, mult*tright, 0.0f};
         Vertices verts(3);
         verts.data = vertices;
         Mesh triangle(verts, true);
         return triangle;
     }
     else if (type == 2) {
+        std::vector<float> vertices = {
+            mult*bleft, (mult*tright)/2, 0.0f,
+            mult*bleft, (mult*tright)/2, 0.0f,
+            mult*-bleft, (mult*tright)/2, 0.0f};
+        Vertices verts(3);
+        verts.data = vertices;
+        Mesh triangle(verts, true);
+        return triangle;
 
     }
     else {
@@ -70,7 +78,7 @@ int main() {
 
     Mesh triangle2(verts2, true);
 
-    Mesh test = createTriangle(-0.5f, 0.5f, 1);
+    Mesh test = createTriangle(-0.5f, 0.5f, 1, 2);
 
     Shader shader(
         "shaders/vertex_core.glsl",
